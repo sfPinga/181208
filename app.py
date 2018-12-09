@@ -18,11 +18,6 @@ import Institutional_Investors
 app = Flask(__name__)
 
 
-# Channel Access Token
-line_bot_api = LineBotApi('pTJMdSrloaDTpnKc1DEUEIMaUyJPshuKcTGdH8RaFuE0yVBeGAMn7DR/LuqDqFQ/iF8wJ5CLuQZIo/Euqf/YzLIqj6w6CQ0JAPtj3y1qEiScwH2y8+5W/ETYy+yBQozRamoNEg6q8o7l6lko4uwqdgdB04t89/1O/w1cDnyilFU=')
-# Channel Secret
-handler = WebhookHandler('54addcba09f88637324493b61cf81080')
-
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
 def callback():
